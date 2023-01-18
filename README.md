@@ -1,2 +1,2 @@
 # LonelyIsland
-Вiploma work
+Diploma work
