@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Assets.Scripts
 {
@@ -8,6 +7,7 @@ namespace Assets.Scripts
         [SerializeField] private float _speed;
 
         private Vector2 _direction;
+        
         public void SetDirection(Vector2 direction)
         {
             _direction = direction;

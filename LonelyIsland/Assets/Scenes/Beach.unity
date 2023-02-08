@@ -170,6 +170,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1664680228}
     m_Modifications:
     - target: {fileID: 6755755821192745997, guid: 4d21ec172ea0e1b47a43255c6762304f, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6755755821192745997, guid: 4d21ec172ea0e1b47a43255c6762304f, type: 3}
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
@@ -4267,6 +4271,80 @@ Transform:
   m_Father: {fileID: 1311946175}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &692001761
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 692001762}
+  - component: {fileID: 692001763}
+  m_Layer: 0
+  m_Name: 'PoligonCollisionLeft '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &692001762
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692001761}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1764473933}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &692001763
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692001761}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -7.8761153, y: -2.104982}
+      - {x: -8.380981, y: -0.20253623}
+      - {x: -7.973483, y: 0.5926471}
+      - {x: -6.769355, y: 1.308833}
+      - {x: -6.7991, y: 1.7274599}
+      - {x: -7.528983, y: 2.0124316}
+      - {x: -7.65987, y: 3.413701}
+      - {x: -7.2822876, y: 4.0075173}
+      - {x: -5.9220915, y: 4.042139}
+      - {x: -3.2047496, y: 4.808487}
+      - {x: -3.8546474, y: 9.802257}
+      - {x: -3.125988, y: 10.9631405}
+      - {x: -7.934308, y: 10.98485}
+      - {x: -13.600031, y: 1.0432391}
+      - {x: -13.557451, y: -3.6750813}
+      - {x: -8.0264, y: -3.7401352}
+      - {x: -7.386586, y: -2.4991474}
 --- !u!1 &746886760
 GameObject:
   m_ObjectHideFlags: 0
@@ -4278,7 +4356,6 @@ GameObject:
   - component: {fileID: 746886761}
   - component: {fileID: 746886763}
   - component: {fileID: 746886762}
-  - component: {fileID: 746886764}
   m_Layer: 0
   m_Name: Stone
   m_TagString: Untagged
@@ -4804,13 +4881,45 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!19719996 &746886764
-TilemapCollider2D:
+--- !u!1 &914751224
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 746886760}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 914751225}
+  - component: {fileID: 914751226}
+  m_Layer: 0
+  m_Name: PoligonCollisionRight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &914751225
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914751224}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1764473933}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &914751226
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914751224}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -4818,8 +4927,22 @@ TilemapCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_MaximumTileChangeCount: 1000
-  m_ExtrusionFactor: 0
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -1.1552348, y: 10.982972}
+      - {x: -1.3869944, y: 4.97355}
+      - {x: 5.515342, y: 4.0298905}
+      - {x: 8.696226, y: 4.683798}
+      - {x: 8.732545, y: 10.9894905}
 --- !u!1001 &1008163942
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4888,37 +5011,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1582302071230023071, guid: bc4ee622eca8b344ba38c1be0a565000, type: 3}
-      propertyPath: m_Size.y
-      value: 1.0685464
-      objectReference: {fileID: 0}
-    - target: {fileID: 1582302071230023071, guid: bc4ee622eca8b344ba38c1be0a565000, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.08114827
-      objectReference: {fileID: 0}
     - target: {fileID: 8860570023852965538, guid: bc4ee622eca8b344ba38c1be0a565000, type: 3}
       propertyPath: m_Name
       value: Hero
       objectReference: {fileID: 0}
-    - target: {fileID: 8860570023852965538, guid: bc4ee622eca8b344ba38c1be0a565000, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8860570023852965538, guid: bc4ee622eca8b344ba38c1be0a565000, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8860570023852965539, guid: bc4ee622eca8b344ba38c1be0a565000, type: 3}
-      propertyPath: m_SortingOrder
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 8860570023852965548, guid: bc4ee622eca8b344ba38c1be0a565000, type: 3}
       propertyPath: m_RootOrder
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8860570023852965548, guid: bc4ee622eca8b344ba38c1be0a565000, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8860570023852965548, guid: bc4ee622eca8b344ba38c1be0a565000, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4991,6 +5090,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 557845393}
+  - {fileID: 1764473933}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11306,7 +11406,6 @@ GameObject:
   - component: {fileID: 1505676534}
   - component: {fileID: 1505676536}
   - component: {fileID: 1505676535}
-  - component: {fileID: 1505676537}
   m_Layer: 0
   m_Name: StoneLevel2
   m_TagString: Untagged
@@ -11696,22 +11795,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!19719996 &1505676537
-TilemapCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1505676533}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_MaximumTileChangeCount: 1000
-  m_ExtrusionFactor: 0
 --- !u!1 &1664680227
 GameObject:
   m_ObjectHideFlags: 0
@@ -11839,6 +11922,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1af02a8cc2bcbe343b7a0035d6a0d033, type: 3}
+--- !u!1 &1764473932
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1764473933}
+  m_Layer: 0
+  m_Name: CollisionMap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1764473933
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764473932}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 692001762}
+  - {fileID: 914751225}
+  m_Father: {fileID: 1311946175}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1844405599
 GameObject:
   m_ObjectHideFlags: 0
@@ -11850,7 +11966,6 @@ GameObject:
   - component: {fileID: 1844405600}
   - component: {fileID: 1844405602}
   - component: {fileID: 1844405601}
-  - component: {fileID: 1844405603}
   m_Layer: 0
   m_Name: StoneLevel3
   m_TagString: Untagged
@@ -12200,50 +12315,8 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!19719996 &1844405603
-TilemapCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1844405599}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_MaximumTileChangeCount: 1000
-  m_ExtrusionFactor: 0
---- !u!1 &1921185130 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8860570023852965538, guid: bc4ee622eca8b344ba38c1be0a565000, type: 3}
-  m_PrefabInstance: {fileID: 1050433313}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1921185135 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8860570023852965548, guid: bc4ee622eca8b344ba38c1be0a565000, type: 3}
   m_PrefabInstance: {fileID: 1050433313}
   m_PrefabAsset: {fileID: 0}
---- !u!50 &1921185137
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1921185130}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 0.5097656
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
