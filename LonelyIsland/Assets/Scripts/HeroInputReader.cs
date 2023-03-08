@@ -12,5 +12,10 @@ namespace Assets.Scripts
             var direction = context.ReadValue<Vector2>();
             _hero.SetDirection(direction);
         }
+
+        public void OnInteract()
+        {
+                _hero.Interact();
+        }
     }
 }
